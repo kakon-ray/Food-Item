@@ -7,7 +7,6 @@ const DisplayFood = ({ foodItem }) => {
       {foodItem.map((item) => (
         <React.Fragment key={item.idMeal}>
           <div className="col-md-4 g-3">
-            {/* {console.log(item)} */}
             <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={item.strMealThumb} />
               <Card.Body>
