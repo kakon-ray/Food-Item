@@ -6,11 +6,12 @@ const DisplayFood = ({ foodItem }) => {
     <div className="row">
       {foodItem.map((item) => (
         <React.Fragment key={item.idMeal}>
-          <div className="col-md-4">
+          <div className="col-md-4 g-3">
+            {/* {console.log(item)} */}
             <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={item.strMealThumb} />
               <Card.Body>
-                <Card.Title>{item.strIngredient2}</Card.Title>
+                <Card.Title>{item.strMeal}</Card.Title>
                 <Card.Text>
                   {item.strInstructions.split("").length < 100
                     ? item.strInstructions
