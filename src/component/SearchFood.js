@@ -27,13 +27,13 @@ const SearchFood = () => {
 
   return (
     <div className="container">
-      <h1 className="py-3">FOOD ITEM</h1>
+      <h1 className="pt-3">FOOD ITEM</h1>
+      <p>Search your favorite "Food" first letter</p>
       <div className="input-group mb-3">
         <input
           type="text"
           className="form-control"
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          placeholder="Search The Food First Letter"
           aria-describedby="button-addon2"
           value={foodInput}
           onChange={handleInputChange}
