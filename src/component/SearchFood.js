@@ -16,6 +16,12 @@ const SearchFood = () => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setData(data.meals));
+  }, []);
+  useEffect(() => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${foodInput}`;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setData(data.meals));
   }, [foodInput]);
 
   const onSearch = () => {
